@@ -458,7 +458,7 @@ const htmlTemplate = `<!DOCTYPE html>
                 <div class="relative">
                     <img src="${game.thumbnail}" alt="${game.title}" 
                          class="w-full h-48 object-cover"
-                         onerror="this.src='https://via.placeholder.com/365x206/1a1a2e/00ffff?text=No+Image'">
+                         onerror="this.src='https://placehold.co/365x206/1a1a2e/00ffff?text=No+Image'">
                     <div class="absolute top-3 right-3">
                         <span class="${getPlatformClass(game.platform)} px-3 py-1 rounded-full text-xs font-bold text-white shadow-lg">
                             ${game.platform.includes('PC') ? '💻 PC' : '🌐 Browser'}
