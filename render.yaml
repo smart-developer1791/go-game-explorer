@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: go-game-explorer
+    env: go
+    plan: free
+    buildCommand: |
+      if [ ! -f go.mod ]; then
+        go mod init game-explorer
+      fi
+      go mod tidy
+      go build -o game-explorer .
+    startCommand: ./game-explorer
